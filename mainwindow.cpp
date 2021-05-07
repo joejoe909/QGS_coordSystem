@@ -71,7 +71,9 @@ MainWindow::MainWindow(QWidget *parent)
 
      QGraphicsLineItem *line3 = scene->addLine(0, 0, 2000,1000, pen);
 
+    //adding more stuff later
 
+     qDebug() << line3;
 
 }
 
