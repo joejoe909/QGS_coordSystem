@@ -43,7 +43,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //End
 
-    scene->setSceneRect(-1000, 1000, 1000, -1000);
+   // scene->setSceneRect(-1080, 540, 2160, 1080); //2160 is the width not the right coordinate.
     view->setScene(scene);
     view->scale(1, -1);
     setCentralWidget(view);
@@ -62,13 +62,14 @@ MainWindow::MainWindow(QWidget *parent)
     //   QFont("Times", 25));
 
      QRect middle = view->geometry();
+     qDebug() << middle;
 
-     QGraphicsLineItem *line1 = scene->addLine(-500, 1000, -500 ,-1000);
+     QGraphicsLineItem *line1 = scene->addLine(0,1000,0,-1000);
      line1->setPen(GreenPen);
-     QGraphicsLineItem *line2 = scene->addLine(-2000,500,2000,500);
+     QGraphicsLineItem *line2 = scene->addLine(-2000,0,2000,0);
      line2->setPen(RedPen);
 
-    //   QGraphicsLineItem *line3 = scene->addLine(0,0, 1000,500, pen);
+     QGraphicsLineItem *line3 = scene->addLine(-500, 500, 1000,1000, pen);
 
 
 
