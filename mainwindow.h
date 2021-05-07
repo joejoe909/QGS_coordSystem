@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -17,5 +18,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QList<QScreen*> screens;
+    QScreen *currentScreen;
+    int numOfScreens;
+
 };
 #endif // MAINWINDOW_H
