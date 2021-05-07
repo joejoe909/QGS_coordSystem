@@ -2,3 +2,6 @@
 
 
 ###### Will use this for a number of projects I have in mind. First building the graph.
+
+
+##### use with Qt Creator Qt 5.15.13 load the profile. 
