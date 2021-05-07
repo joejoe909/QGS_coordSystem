@@ -53,7 +53,7 @@ MainWindow::MainWindow(QWidget *parent)
     QPen RedPen(Qt::red);
     QPen GreenPen(Qt::green);
     QPen pen(Qt::black);
-    pen.setWidth(2);
+    pen.setWidth(1);
 
     //   QGraphicsRectItem* rectangle = scene->addRect(-900, -900, 900, 900, pen);
     //   QGraphicsEllipseItem* ellipse = scene->addEllipse(0, 80, 200, 60,
@@ -69,7 +69,7 @@ MainWindow::MainWindow(QWidget *parent)
      QGraphicsLineItem *line2 = scene->addLine(-2000,0,2000,0);
      line2->setPen(RedPen);
 
-     QGraphicsLineItem *line3 = scene->addLine(-500, 500, 1000,1000, pen);
+     QGraphicsLineItem *line3 = scene->addLine(0, 0, 2000,1000, pen);
 
 
 
